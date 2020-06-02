@@ -30,12 +30,21 @@ Graphscript implement the following features
 
 - :zap: **OWL Carousel** - Plugin that lets you create a beautiful responsive carousel slider
 - :books: **TypeScript** - Adds typing and some other language features
+- :movie_camera: **API TheMovieDB** - Movie database API, instruction in [TheMovieDB](https://developers.themoviedb.org/3/getting-started/introduction)
 
 ## :zap: Commands
 - `npm start` - start the playground pointing for dist index at `http://localhost:4200/`
 - `ng test` - To execute the unit tests via Karma
 - `ng e2e` - To execute the end-to-end tests via Protractor
 - `ng build` - to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build
+
+## :camera: Exemple Screens
+
+![Alt text](https://i.ibb.co/fQ257Z1/mobile.jpg "Mobile")
+
+![Alt text](https://i.ibb.co/H2JPhZG/web-details.jpg "Movie Details")
+
+![Alt text](https://i.ibb.co/pbsgn2Q/web-list.jpg "Home Page")
 
 ## :handshake: **Contributing**
 If you liked the project and want to cooperate feel free to fork this repository and send Pull Requests.
@@ -45,8 +54,6 @@ All kinds of contributions are very welcome and appreciated
 -   ⭐️ Star the project
 -   🐛 Find and report issues
 -   📥 Submit PRs to help solve issues or add features
-
-If you are in a private repository, access the following link replacing `$YOUR_REPOSITORY_LINK$` with your repository link.
 
 ## :book: License
 MIT license, Copyright (c) 2020 Sidney Filho.
