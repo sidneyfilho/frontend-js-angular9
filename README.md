@@ -1,27 +1,52 @@
-# FrontendJsAngular9
 
+<pre align="center">
+
+  ____   _               _   __  _  _       
+ |  _ \ | | _   _  _ __ (_) / _|| |(_)__  __
+ | |_) || || | | || '__|| || |_ | || |\ \/ /
+ |  __/ | || |_| || |   | ||  _|| || | >  < 
+ |_|    |_| \__,_||_|   |_||_|  |_||_|/_/\_\
+                                            
+</pre>
+
+<p align="center"> A simple model for starting a film application using Angular </p>
+
+
+## :bulb: Introduction 
+
+A TypeScript-based open source and front-end web application platform, led by the Angular Team.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## :house: Getting started
 
-## Code scaffolding
+1. Clone this repo using: `https://github.com/sidneyfilho/frontend-js-angular9.git`
+2. Install the packages using your preference package manager ( yarn install or npm install )
+3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## :tada: Features
 
-## Build
+Graphscript implement the following features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- :zap: **OWL Carousel** - Plugin that lets you create a beautiful responsive carousel slider
+- :books: **TypeScript** - Adds typing and some other language features
 
-## Running unit tests
+## :zap: Commands
+- `npm start` - start the playground pointing for dist index at `http://localhost:4200/`
+- `ng test` - To execute the unit tests via Karma
+- `ng e2e` - To execute the end-to-end tests via Protractor
+- `ng build` - to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :handshake: **Contributing**
+If you liked the project and want to cooperate feel free to fork this repository and send Pull Requests.
 
-## Running end-to-end tests
+All kinds of contributions are very welcome and appreciated
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+-   ⭐️ Star the project
+-   🐛 Find and report issues
+-   📥 Submit PRs to help solve issues or add features
 
-## Further help
+If you are in a private repository, access the following link replacing `$YOUR_REPOSITORY_LINK$` with your repository link.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## :book: License
+MIT license, Copyright (c) 2020 Sidney Filho.
