@@ -1,0 +1,28 @@
+<div class="card-view">
+    <div class="card-header">
+        <img [src]="baseImgUrl + movie.poster_path" class="card-img" alt="logo"/>
+        <div class="card-header-icon">
+            <a >
+                <i (click)="openMovie(movie)" class="cursor material-icons header-icon">play_arrow</i>
+            </a>
+        </div>
+    </div>
+    <div class="card-movie-content">
+        <div class="card-movie-content-head">
+            <a (click)="openMovie(movie)">
+                <h3 class="cursor card-movie-title">{{ movie.title }}</h3>
+            </a>
+            <div class="ratings"><span>{{ movie.vote_average }}</span>/10</div>
+        </div>
+        <div class="card-movie-info">
+            <div class="movie-running-time">
+                <label>Data de lançamento</label>
+                <span>{{ movie.release_date | date:'dd/MM/yyyy' }}</span>
+            </div>
+            <div class="movie-running-time">
+                <label>Popularidade</label>
+                <span>{{ movie.popularity }}</span>
+            </div>
+        </div>
+    </div>
+</div>

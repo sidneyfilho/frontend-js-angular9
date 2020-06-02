@@ -1,0 +1,60 @@
+<main>
+    <!-- <div class="container"> -->
+    <div class="movie-card">
+        <div class="poster-wrapper">
+            <div class="poster">
+                <img [src]="baseImgUrl + movie.poster_path"
+                    alt="poster"/>
+                <div class="release-date">
+                    <h2>{{ movie.release_date | date:'dd' }}</h2>
+                    <div class="divider"></div>
+                    <p>{{ movie.release_date | date:'MMM yyyy' }}</p>
+                </div>
+                <div class="btn-play">&#9655;</div>
+            </div>
+            <div class="btn-play">     
+                <button (click)="returnListMovie()" mat-raised-button class="btn-return">« Voltar</button>
+            </div>
+        </div>
+        <!-- end poster-wrapper -->
+        <div class="movie-info">
+            <div class="header-section">
+                <h2>{{ movie.title }}</h2>
+                <p><span *ngFor="let genre of movie.genres">{{ genre.name }} / </span> {{ movie.runtime }} Min.</p>
+                <div class="extra">
+                    <div class="ratings">
+                        <p> &#9733; &#9733; &#9733; &#9733; &#9734; {{ movie.vote_average }}</p>
+                    </div>
+                    <p class="channels"><span *ngFor="let companie of movie.production_companies">{{ companie.name }}</span></p>
+                </div>
+            </div>
+            <div class="cast-section">
+                <h3>O ELENCO</h3>
+                <div class="casts">
+                    <ng-container *ngFor="let image of this.movie.credits.cast; let i = index">
+                        <img *ngIf="i < 5 " [src]="baseImgUrl + image.profile_path" alt="avatar" />
+                    </ng-container>
+                </div>
+            </div>
+            <div class="synopsis-section">
+                <h3>SINOPSE</h3>
+                <p>
+                    {{ movie.overview }}
+                </p>
+            </div>
+            <div class="gallery-section">
+                <h3>VIDEO / IMAGENS</h3>
+                <div class="gallery">
+                    <ng-container *ngFor="let image of this.movie.images.backdrops; let i = index">
+                        <div *ngIf="i < 6 " class="small" >
+                            <img [src]="baseImgUrl + image.file_path" alt="media" />
+                        </div>
+                    </ng-container>
+                    <div class="medium"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end movie-card -->
+    <!-- </div> -->
+</main>

@@ -1,0 +1,15 @@
+<div class="movie_list" >
+    <h2 class="mat-h2">Populares hoje</h2>
+    <owl-carousel-o [options]="customOptions">
+        <ng-template *ngFor="let movie of listMoviesPopular" carouselSlide>        
+            <app-card-movie [movie]="movie"></app-card-movie>
+        </ng-template>  
+    </owl-carousel-o>
+    <h1 class="mat-h2">Sua lista</h1>
+    <owl-carousel-o [options]="customOptions">
+        <ng-template *ngFor="let movie of listMovies" carouselSlide>        
+            <app-card-movie [movie]="movie"></app-card-movie>
+        </ng-template>  
+    </owl-carousel-o>
+
+</div>
